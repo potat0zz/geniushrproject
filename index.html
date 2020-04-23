@@ -12,15 +12,12 @@
             font-family: "Bookman", cursive;
         }
         body {
-            opacity: 0;
             background-color: rgb(246, 240, 255);
             text-align: center; 
-            opacity: 0; 
-             -webkit-transition: opacity 2s ease-in;
-    -moz-transition: opacity 2s ease-in;
-    -o-transition: opacity 2s ease-in;
-    -ms-transition: opacity 2s ease-in;
-    transition: opacity 2s ease-in;
+            @keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
         }
         h3 {
             text-decoration: underline;
